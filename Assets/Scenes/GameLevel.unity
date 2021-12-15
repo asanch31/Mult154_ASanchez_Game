@@ -1414,14 +1414,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cad2acecab241484d93309274943279a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 3
+  difficulty: 10
   enemyPrefab: {fileID: 5515232417251576364, guid: b15b245f1f89b984fbd68dd76e758ae6, type: 3}
   bossPrefab: {fileID: 4430414799266149618, guid: 47804e9d72699b741b25b174670e8622, type: 3}
   powerUpPrefab:
   - {fileID: 7113394567065711395, guid: e6db8688388556c4e82572042443f4ec, type: 3}
-  - {fileID: 72457840656180372, guid: 84cb221e80959c74e96e9ab0f69e5ee7, type: 3}
-  - {fileID: 72457840656180372, guid: 84cb221e80959c74e96e9ab0f69e5ee7, type: 3}
-  - {fileID: 72457840656180372, guid: 84cb221e80959c74e96e9ab0f69e5ee7, type: 3}
+  - {fileID: 9131898945149462432, guid: a6087aee1c1f9464f97596550b6fb99d, type: 3}
+  - {fileID: 9131898945149462432, guid: a6087aee1c1f9464f97596550b6fb99d, type: 3}
+  - {fileID: 9131898945149462432, guid: a6087aee1c1f9464f97596550b6fb99d, type: 3}
   - {fileID: 8048162280642647132, guid: 91fe3d1a85108ea43818ef8c4f1e51ef, type: 3}
   - {fileID: 1300742528104613482, guid: 01df344cf9f9f1846ad7899ba213472f, type: 3}
   - {fileID: 5237303858658561476, guid: b21ce54b1e0c6654b8436a4fc558c38a, type: 3}

@@ -322,7 +322,7 @@ MonoBehaviour:
     \n\r\nLow Poly Barriers Pack Free-\nhttps://assetstore.unity.com/packages/3d/props/exterior/low-poly-barriers-pack-free-201810\n\nFarland
     Skies - Cloudy Crown-\nhttps://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004\n\nHand
     Painted Seamless Tiles Texture Vol - 5-\nhttps://assetstore.unity.com/packages/2d/textures-materials/tiles/hand-painted-seamless-tiles-texture-vol-5-162143\n\nLow
-    Poly Tree Pack-\nhttps://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-tree-pack-57866"
+    Poly Tree Pack-\nhttps://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-tree-pack-57866\n\nAudio-Zapsplat.net\nmusic_zapsplat_game_music_mystery_underscore_airy_dark_tension_006\nsoundbits_JustGore2_Crunch_Bite_Rip_11\nzapsplat_horror_zombie_male_groan_growl_11766\nzapsplat_horror_atmosphere_dark_sinister_haunting_whining_metallic_shrill_001_74694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 378.44818, w: -57.311005}
+  m_margin: {x: -99.6806, y: 0, z: 402.83807, w: -57.311005}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -806,7 +806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &626697325
 RectTransform:
   m_ObjectHideFlags: 0

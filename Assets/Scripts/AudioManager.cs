@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
-{
+{ //control volume 
     AudioSource audioSource;
     public const string VOLUME_LEVEL_KEY = "VolumeLevel";
     public const float DEFAULT_VOLUME = 0.5f;

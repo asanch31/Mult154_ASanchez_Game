@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
+
+    //control volume menu
     public GameObject pausePanel;
     private bool activePanel = false;
     // Start is called before the first frame update
@@ -21,6 +23,7 @@ public class PauseMenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //press "v" to (de)activate volume menu
         if(Input.GetKeyDown(KeyCode.V) && activePanel==false)
         {
             activePanel = true;

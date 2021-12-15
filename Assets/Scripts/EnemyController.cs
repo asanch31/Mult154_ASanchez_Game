@@ -5,9 +5,8 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     //wander if can't see player
-    //If player can see bear, bear will evade
-    // if hive is dropped, hive will be seeked
-    //
+    //if enemy see's player, will pursue
+    //if player throws grenade enemy will pursue grenade
 
 
     private Enemy bot;

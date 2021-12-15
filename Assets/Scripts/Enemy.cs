@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    //code to dictate how enemy moves in scene in relation to player
     public enum BMode
     {
         SEEK,

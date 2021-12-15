@@ -65,6 +65,7 @@ public class PlayerHealth : MonoBehaviour
 
             Health();
         }
+        //boss does more damage if emeny is a boss
         if (other.gameObject.CompareTag("Boss"))
 
         {
@@ -86,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
     
     void Health()
     {
+        //display healthbar
         healthBar.fillAmount = (float)health / maxHealth;
 
         healthText.text = health.ToString() + " / " + maxHealth.ToString();

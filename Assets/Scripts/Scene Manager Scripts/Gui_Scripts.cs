@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//control GUI, used for buttons
 public class Gui_Scripts : MonoBehaviour
 {
     public void QuitGame()

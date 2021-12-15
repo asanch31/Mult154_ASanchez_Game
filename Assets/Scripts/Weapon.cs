@@ -81,6 +81,7 @@ public class Weapon : MonoBehaviour
 
     void ThrowGrenade()
     {
+        //throw grenade to distract enemies
         
         if (grenadeAmmo > 0 && grenadeThrown==false && playerCtrl.gamePause == false)
         {
@@ -101,6 +102,7 @@ public class Weapon : MonoBehaviour
     }
     IEnumerator GrenadeThrown()
     {
+        //timer for how long grenade last
         yield return new WaitForSeconds(5);
         grenadeThrown = false;
     }
@@ -142,9 +144,11 @@ public class Weapon : MonoBehaviour
         if (other.CompareTag("ammo"))
         {
             IncAmmo(other.gameObject);
+            anim.SetTrigger("Resupply");
 
         }
     }
+    // increase amount of ammo based on how far into the game player is
     void IncAmmo(GameObject other)
     {
         int difficulty = 10; 

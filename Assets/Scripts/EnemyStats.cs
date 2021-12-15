@@ -36,7 +36,7 @@ public class EnemyStats : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        //player interaction with enemy or hazards
+        //enemy intreraction with player attacks
         if (other.gameObject.CompareTag("attack"))
         {
             health--;
@@ -44,7 +44,7 @@ public class EnemyStats : MonoBehaviour
             Destroy(other.gameObject);
             Health();
 
-            //damage monster
+            //damage monster if touching spiked barrier
         }
             if (other.gameObject.CompareTag("DMG"))
             {
@@ -54,7 +54,7 @@ public class EnemyStats : MonoBehaviour
         }
         
     }
-
+    //death of enemy
     void Health()
     {
         if (health == 0)

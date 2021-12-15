@@ -22,6 +22,7 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //display amount of barriers in inventory
         PlaceBarrier();
         barrierText[0].text = "" + barrier1;
         barrierText[1].text = "" + barrier2;
@@ -29,6 +30,7 @@ public class PlayerInventory : MonoBehaviour
         barrierText[3].text = "" + barrier4;
 
     }
+    //place barrier in front of player 
     void PlaceBarrier()
     {
         if (barrier1 > 0)
@@ -69,7 +71,7 @@ public class PlayerInventory : MonoBehaviour
             }
         }
     }
-
+    //pickup barrier items into inventory
     private void OnTriggerEnter(Collider other)
     {
 

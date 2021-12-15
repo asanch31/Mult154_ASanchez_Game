@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
+    //not currently used (Add new animation?)
     private void IdleAnim()
     {
         //keep track of time while idle
@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
+        //player movement
         if (playerCtrl.gameOver == false)
         {
             Vector3 rot = transform.rotation.eulerAngles;

@@ -29,8 +29,7 @@ public class ScoreList : MonoBehaviour
 
     public GameObject entryPrefab;
 
-    private int topScores = 0;
-    private int maxScores = 7;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -80,8 +79,7 @@ public class ScoreList : MonoBehaviour
         //insert at top of list
         scores.Insert(0, new Score(name, round));
         int offset = 50;
-        Debug.Log(topScores);
-        Debug.Log(scores[topScores]);
+        
 
         //add score entry to score panel prefab
         foreach (Score score in scores)
@@ -103,7 +101,7 @@ public class ScoreList : MonoBehaviour
 
             
             
-            topScores++;
+            
         }
 
         finalPanel.SetActive(false);
@@ -125,6 +123,7 @@ public class ScoreList : MonoBehaviour
         }
     }
 
+    //sort scores by highest to lowest
     static int SortByScore(Score p1, Score p2)
     {
         return p2.round.CompareTo(p1.round);

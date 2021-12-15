@@ -36,7 +36,7 @@ public class BossStats : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        //player interaction with enemy or hazards
+        //enemy interaction with player attacks
         if (other.gameObject.CompareTag("attack"))
         {
             health--;
@@ -45,6 +45,7 @@ public class BossStats : MonoBehaviour
             Health();
 
         }
+        //enemy loses health if barrier does damage
         if (other.gameObject.CompareTag("DMG"))
         {
             
@@ -54,6 +55,7 @@ public class BossStats : MonoBehaviour
     }
     void Health()
     {
+        //death of enemy
         if (health == 0)
         {
             anim.SetBool("Dead", true);

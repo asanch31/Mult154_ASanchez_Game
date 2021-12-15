@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     {
         Health();
         Pause();
+        //display pause menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             
@@ -52,7 +53,7 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-
+        //call for supply drop (ammo and grenade)
         if (Input.GetKey(KeyCode.R) && gameOver.gameOver == false)
         {
             SupplyDropCall();
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     void Health()
     {
+        //if player dies display end scene
         if(gameOver.gameOver==true)
         {
             SceneManager.LoadScene(2);
@@ -76,11 +78,12 @@ public class GameManager : MonoBehaviour
     }
     //bring up menu, pausing game
     void Pause()
-    {   
+    {   //if quit game is click load end scene
         if (gameOver.gameOver==true)
         {
             SceneManager.LoadScene(2);
         }
+        //display pause menu
         if (gamePause == true)
         {
             pauseMenu.SetActive(true);
@@ -91,7 +94,7 @@ public class GameManager : MonoBehaviour
             
         }
     }
-  
+  //deactivate pause menu
     public void UnPauseGame()
     {
         pauseMenu.SetActive(false);
@@ -101,7 +104,7 @@ public class GameManager : MonoBehaviour
     }
 
    
-
+    //supply drop method
     void SupplyDropCall()
     {
         
@@ -145,7 +148,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //reset timer for collecting sample
+    //reset timer for supply drop
     private void resetTimer()
     {
         time = 0;
