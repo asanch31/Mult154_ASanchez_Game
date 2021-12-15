@@ -20,10 +20,12 @@ public class Gui_Scripts : MonoBehaviour
 
     public void StartGame()
     {
+        SpawnManager.waveNum = 1;
         SceneManager.LoadScene(1);
     }
     public void MainMenu()
     {
+        SpawnManager.waveNum = 1;
         SceneManager.LoadScene(0);
     }
     public void EndGame()
