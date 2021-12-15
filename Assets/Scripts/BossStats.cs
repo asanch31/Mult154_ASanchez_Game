@@ -25,7 +25,7 @@ public class BossStats : MonoBehaviour
         anim = GetComponent<Animator>();
         waveNum = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         difficulty = waveNum.difficulty;
-        int incDif = waveNum.waveNum / waveNum.difficulty;
+        int incDif = SpawnManager.waveNum / waveNum.difficulty;
 
 
         health = health + (health * incDif);

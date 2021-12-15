@@ -109,8 +109,6 @@ public class Enemy : MonoBehaviour
 
     public bool CanSeeTarget()
     {
-
-        print("ct");
         RaycastHit raycastInfo;
         Vector3 targetXZPos = new Vector3(target.transform.position.x, 1.5f, target.transform.position.z);
         Vector3 thisXZPos = new Vector3(transform.position.x, 1.5f, transform.position.z);

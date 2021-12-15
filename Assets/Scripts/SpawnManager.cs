@@ -6,7 +6,7 @@ using TMPro;
 public class SpawnManager : MonoBehaviour
 {
     //difficulty, waves before boss
-    public int difficulty = 5;
+    public int difficulty = 10;
 
     public GameObject enemyPrefab;
     public GameObject bossPrefab;
@@ -18,7 +18,7 @@ public class SpawnManager : MonoBehaviour
     //safe area for player, enemies wont spawn
     private float safeArea = 5;
     private int enemyCount;
-    public int waveNum = 1;
+    public static int waveNum = 1;
     public int enemySpawns = 1;
 
     public TextMeshProUGUI waveText;

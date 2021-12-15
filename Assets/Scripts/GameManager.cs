@@ -11,8 +11,7 @@ public class GameManager : MonoBehaviour
    
 
 
-    public GameObject lose;
-    public GameObject win;
+    
     public bool gamePause = false;
     private PlayerHealth gameOver;
 
@@ -36,9 +35,6 @@ public class GameManager : MonoBehaviour
 
         pauseMenu.SetActive(false);
         
-
-        lose.SetActive(false);
-        win.SetActive(false);
         collectTimer.SetActive(false);
 
         
@@ -73,8 +69,8 @@ public class GameManager : MonoBehaviour
     {
         if(gameOver.gameOver==true)
         {
-            Pause();
-            
+            SceneManager.LoadScene(2);
+
         }
        
     }
@@ -83,8 +79,7 @@ public class GameManager : MonoBehaviour
     {   
         if (gameOver.gameOver==true)
         {
-            lose.SetActive(true);
-            //gamePause = true;
+            SceneManager.LoadScene(2);
         }
         if (gamePause == true)
         {
@@ -93,7 +88,7 @@ public class GameManager : MonoBehaviour
         else
         {
             pauseMenu.SetActive(false);
-            lose.SetActive(false);
+            
         }
     }
   

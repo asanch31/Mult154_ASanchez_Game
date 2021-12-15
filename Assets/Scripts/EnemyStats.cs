@@ -25,7 +25,7 @@ public class EnemyStats : MonoBehaviour
         
         //retrieve difficulty var from spawnmanager
         difficulty = waveNum.difficulty;
-        int incDif = waveNum.waveNum / difficulty;
+        int incDif = SpawnManager.waveNum / difficulty;
         
 
         health = health + (health * incDif);

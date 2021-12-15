@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
     private string[] gunEquip = new string[] {"Pistol"};
     public int bulletIndex = 0;
     public int ammo = 50;
-    private int maxAmmo = 200;
+    private int maxAmmo = 500;
     private int reload = 25;
     public bool firing = false;
     public int grenadeAmmo = 5;
@@ -147,9 +147,10 @@ public class Weapon : MonoBehaviour
     }
     void IncAmmo(GameObject other)
     {
-
+        int difficulty = 10; 
+        difficulty = SpawnManager.waveNum / difficulty;
         Destroy(other.gameObject);
-        
+        reload = reload + (reload * difficulty);
 
         ammoRefillIndicator.SetActive(true);
         //increase ammo amount

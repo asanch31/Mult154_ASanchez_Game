@@ -46,6 +46,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        int enemyDiff = SpawnManager.waveNum / 10;
+        
         enemyAnim = other.GetComponent<Animator>();
 
         //player interaction with ememy or hazards
@@ -55,7 +57,7 @@ public class PlayerHealth : MonoBehaviour
             //player is attack
             ASPlayer.PlayOneShot(zombieBite, 1.0f);
             enemyAnim.SetTrigger("Attack");
-            health = health - 1;
+            health = health - 1 - enemyDiff;
             if (gameOver == false)
             {
                 transform.Translate(Vector3.forward * -1);
@@ -68,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
         {
             enemyAnim.SetTrigger("Attack");
             
-            health = health - 1;
+            health = health - 3 - enemyDiff;
             transform.Translate(Vector3.forward * -1);
             Health();
         }
